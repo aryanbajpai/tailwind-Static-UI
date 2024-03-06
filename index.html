@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPOS UI</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="w-[100vw] md:grid grid-cols-[13%_minmax(87%,_1fr)]  lg:grid-cols-[20%_minmax(80%,_1fr)] h-screen">
+
+        <!-- SECTION-1 -->
+        <section class="hidden h-screen bg-blue-900 border-x-[1.7px] border-gray-400 
+        md:grid grid-rows-[90%_minmax(10%,_1fr)]">
+
+            <div class="border-gray-400">
+                <!-- HEAD -->
+                <div class=" m-auto flex py-7 ">
+                    <div class="m-auto lg:flex gap-2 ">
+                        <div class="mt-[7px] m-auto">
+                            <img src="./Images/gg logo.png" class="sm:w-[50px] w-[35px] rounded-lg">
+                        </div>
+                        <div class="m-auto hidden lg:block">
+                            <h1 class="text-4xl text-white font-bold">UPOS</h1>
+                            <p class="text-white text-[13px]">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON-->
+                <div class="flex">
+                    <button class="bg-white text-gray-700 w-[40px] sm:w-[48px] lg:w-[140px] m-auto xl:w-[206px]  
+                        px-3 py-[6px] rounded-md lg:flex justify-around">
+                        <img src="./Images/plus.jpg"
+                            class="bg-blue-900 text-white font-bold rounded-sm w-[19px] m-auto">
+                        <div class="m-auto hidden lg:block xl:hidden">Choose</div>
+                        <div class="m-auto hidden xl:block">Choose Customer</div>
+                    </button>
+                </div>
+
+                <!-- DASHBOARD -->
+                <div class="border-x-2 border-blue-300 ">
+                    <div class="bg-white text-blue-900 mt-7 flex m-auto">
+                        <div class="m-auto lg:flex gap-[10px] lg:mx-5 ">
+                            <img src="./Images/dsh.png" class="w-[36px] sm:w-[42px] m-auto">
+                            <p class="mt-[9px] text-[14px] hidden lg:block">Dashboard</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white my-2">
+                        <div class="m-auto mx-7 lg:flex gap-5">
+                            <svg class=" w-[18px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                            </svg>
+                            <p class="text-[14px] hidden lg:block">Sell Now</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[21px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                            <p class="text-[14px] hidden lg:block">Manage Agents</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5 ">
+                            <svg class="w-[20px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                            </svg>
+                            <div class=" flex justify-around">
+                                <p class=" text-[14px] hidden lg:block">Manage Money Req.</p>
+                                <div class=" ml-[70px] font-bold hidden xl:block">></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[20px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                            </svg>
+
+                            <div class="flex justify-around">
+                                <p class="text-[14px] hidden lg:block">Order Transaction</p>
+                                <div class=" ml-[87px] hidden xl:block font-bold">></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] mb-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[21px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p class=" text-[14px] hidden lg:block">Commision</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[21px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                            </svg>
+                            <p class=" text-[14px] hidden lg:block">Prepaid Card</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[21px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                            </svg>
+                            <p class="text-[14px] hidden lg:block">Vouchers</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 text-white lg:pl-[27px] my-2">
+                        <div class="m-auto lg:flex gap-5">
+                            <svg class="w-[21px] sm:w-[23px] m-auto lg:m-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                            <p class="text-[14px] hidden lg:block">Other Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="border-gray-400 flex">
+                <button
+                    class="bg-blue-900 text-white rounded-[4px] border xl:w-[206px] m-auto px-[6px] py-1 sm:px-4 sm:py-[6px] flex gap-2">
+                    <svg class="m-auto w-[18px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                    </svg>
+                    <div class="m-auto hidden lg:block xl:hidden">Help</div>
+                    <div class="m-auto hidden xl:block">Help & Support</div>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- SECTION 2-->
+        <section
+            class="bg-white sm:h-screen md:overflow-x-hidden overflow-x-auto overflow-y-scroll xl:overflow-y-hidden [&::-webkit-scrollbar]:hidden">
+
+            <!-- NAV BAR-->
+            <nav class="w-[100%] bg-blue-900 py-3 px-[80px]">
+
+                <div class="w-[100%] m-auto grid grid-cols-3 md:flex md:gap-0 md:justify-between">
+
+                    <!--DASHBOARD MENU-->
+                    <div class="text-white md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+
+                    <!-- SEARCH -->
+                    <div class="flex relative">
+                        <input
+                            class="bg-white hidden md:block rounded-md m-auto py-[5px] xl:w-[430px] lg:w-[300px] placeholder-blue-900 placeholder:p-5"
+                            type="text" name="src" placeholder="Search">
+                        <div class="m-auto md:mt-[6px] rounded-md absolute text-black md:w-[100%] text-right ">
+                            <svg class="w-[29px] rounded-md bg-white m-auto md:ml-[80%] ml-[88%]"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!--MENU-->
+                    <div class="md:hidden text-white ml-10 sm:ml-0 text-right">
+                        <svg class="w-[25px] m-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
+                        </svg>
+                    </div>
+
+                    <!--Menu Display-->
+                    <div class="hidden md:block text-right">
+                        <div class=" flex gap-[34px] text-white">
+
+                            <div class="m-auto">
+                                <svg class="w-[25px] m-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m9 14.25 6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185ZM9.75 9h.008v.008H9.75V9Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008V13.5Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </div>
+
+                            <div class="m-auto flex md:left-[800px]">
+                                <svg class="w-[26px] m-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                                </svg>
+
+                            </div>
+
+                            <div class="border py-1 px-[10px] flex gap-2 rounded-[21px]">
+                                <img class="w-[28px] rounded-[50%] m-auto" src="./Images/hardik sir.jpg" alt="">
+                                <h4 class="m-auto">Hardik Mer</h4>
+                                <div class="m-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- BODY -->
+            <div class="m-5">
+
+                <!-- Head -->
+                <div class="flex justify-between">
+                    <h1 class="font-bold">Your Performance</h1>
+                    <div class="flex gap-4 relative">
+
+                        <button class="border rounded-[3px] m-auto px-[10px] flex gap-[5px] w-30">
+                            <div class=" relative m-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                                </svg>
+                            </div>
+                            <div class=" hidden lg:block m-auto">Select Date</div>
+
+                        </button>
+
+                        <section class="group">
+                            <button id="filter" class="relative border rounded-[3px] px-[10px] flex gap-1 w-30">
+                                <div class=" m-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                                    </svg>
+                                </div>
+                                <div class="hidden lg:block m-auto">Filter</div>
+                                <div class="hidden lg:block m-auto">
+                                    <b><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                        </svg> </b>
+                                </div>
+                            </button>
+
+                        </section>
+
+                    </div>
+                </div>
+                <!--LOREM20 DIV-->
+                <div id="hidden" class="hidden my-2 absolute right-0 mr-2">
+                    <div class="bg-blue-500 text-white p-[6px] w-[330px] h-[110px]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta molestiae
+                            modi itaque aspernatur soluta, tempora ea quas corporis quis?</p>
+                    </div>
+                </div>
+
+                <!-- Cards-->
+                <div class="flex overflow-x-scroll [&::-webkit-scrollbar]:hidden mt-[14px] border rounded h-[130px] w-[100%]">
+
+                    <!-- Card1 -->
+                    <div>
+                        <div class="border w-[315px] h-[100%]">
+                            <div class="flex justify-between w-[100%] h-[48%]">
+                                <div class="m-auto h-[100%] w-[50%] flex gap-2">
+                                    <div class="text-white bg-blue-900 w-10 m-auto rounded h-[39px]">
+                                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                        </svg>
+                                    </div>
+                                    <div class=" m-auto h-[65%]">
+                                        <p>Main Wallet</p>
+                                        <div class="flex gap-[3px] text-green-600">
+                                            <div class="h-14 mt-[1.5px]">
+                                                <svg class="w-[14px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-[11px] "> 5% </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-auto">
+                                    <svg class="border m-auto ml-[105px] w-5 rounded text-gray-500"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="flex h-[50%]">
+                                <div class="m-auto">
+                                    <div class=" m-auto flex">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                            </svg>
+                                        </div>
+                                        <p class="font-bold m-auto">1,58,552.28</p>
+                                    </div>
+                                    <div class="text-[12px] m-auto">Compared to last week</div>
+                                </div>
+                                <div class=" w-[50%] ">
+                                    <img src="./Images/plus graph.png" class="w-[66px] ml-[80px] mt-[-18px] opacity-40">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card2 -->
+                    <div>
+                        <div class="border w-[315px] h-[100%]">
+                            <div class="flex justify-between w-[100%] h-[48%]">
+                                <div class="m-auto h-[100%] w-[50%] flex gap-2">
+                                    <div class="text-white bg-blue-900 w-10 m-auto rounded h-[39px]">
+                                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                        </svg>
+                                    </div>
+                                    <div class="m-auto h-[65%]">
+                                        <p>Earn Wallet</p>
+                                        <div class="flex gap-[3px] text-red-600">
+                                            <div class="h-14 mt-[1.5px]">
+                                                <svg class="w-[14px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-[11px] "> 3% </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-auto ">
+                                    <svg class="border m-auto ml-[105px] w-5 rounded text-gray-500"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="flex h-[50%]">
+                                <div class="m-auto">
+                                    <div class="flex m-auto">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                            </svg>
+                                        </div>
+                                        <p class="m-auto font-bold">50,500.35</p>
+                                    </div>
+                                    <div class="text-[12px] m-auto">Compared to last week</div>
+                                </div>
+                                <div class="w-[50%]">
+                                    <img src="./Images/red graph.png"
+                                        class="w-[66px] h-[62px] ml-[80px] mt-[-10px] opacity-60">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card3 -->
+                    <div>
+                        <div class="border w-[315px] h-[100%]">
+                            <div class="w-[100%] h-[48%]">
+                                <div class=" h-[100%] w-[50%] flex gap-2">
+                                    <div class="text-white m-2 bg-blue-900 w-10 rounded h-[39px]">
+                                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                        </svg>
+                                    </div>
+                                    <div class="mt-1 h-[65%]">
+                                        <p>Total Orders</p>
+                                        <div class="flex gap-[3px] text-green-600">
+                                            <div class="h-14 mt-[1.5px]">
+                                                <svg class="w-[14px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-[11px] "> 15% </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex h-[50%]">
+                                <div class="ml-[18px]">
+                                    <div class="font-bold m-auto">10000</div>
+                                    <div class="text-[12px] m-auto">Compared to last week</div>
+                                </div>
+                                <div class="w-[50%] m-auto">
+                                    <img src="./Images/plus graph.png" class="w-[66px] ml-[88px] mt-[-26px] opacity-40">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card4 -->
+                    <div>
+                        <div class="border w-[315px] h-[100%]">
+                            <div class="w-[100%] h-[48%]">
+                                <div class="h-[100%] w-[100%] flex gap-2 ">
+                                    <div class="text-white m-2 bg-blue-900 w-10 rounded h-[39px]">
+                                        <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                        </svg>
+                                    </div>
+                                    <div class="mt-1 h-[65%]">
+                                        <p>Commission Earned</p>
+                                        <div class="flex gap-[3px] text-green-600">
+                                            <div class="h-14 mt-[1.5px]">
+                                                <svg class="w-[14px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-[11px] "> 15% </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex h-[50%]">
+                                <div class="m-auto">
+                                    <div class="flex m-auto">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                            </svg>
+                                        </div>
+                                        <p class="m-auto font-bold">5,000.12</p>
+                                    </div>
+                                    <div class="text-[12px] m-auto">Compared to last week</div>
+                                </div>
+                                <div class="w-[50%]">
+                                    <img src="./Images/plus graph.png" class="w-[66px] ml-[80px] mt-[-19px] opacity-40">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Body Content-->
+                <div class=" xl:grid xl:grid-cols-[800px_minmax(200px,_1fr)]">
+                    <!--Order History-->
+                    <div class="lg:w-[800px]">
+                        <!--Heading-->
+                        <div class="w-[100%] flex justify-between">
+                            <div class="w-[50%] font-bold m-auto">Order History</div>
+                            <div class=" w-[50%] text-right"> <a href="#"
+                                    class="text-blue-600 m-auto text-[14px] mr-1">View All ></a> </div>
+                        </div>
+
+                        <!--DATA TABLE-->
+                        <div class="mt-3 w-[100%] md:overflow-x-hidden [&::-webkit-scrollbar]:hidden overflow-auto">
+                            <table class="m-auto w-[100%] rounded-tl-lg overflow-x-scroll lg:overflow-hidden">
+                                <thead>
+                                    <tr class="bg-blue-900 text-white">
+                                        <td class="p-3 rounded-tl-lg ">Order ID</td>
+                                        <td class="p-3 pl-9 ">Segment</td>
+                                        <td class="p-3 pl-9">Customer</td>
+                                        <td class="p-3 pl-9">Commission</td>
+                                        <td class="p-3 pl-8 rounded-tr-lg">Action</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-3 m-auto w-auto">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn1">View Details</button>
+                                                <svg id="display" class="m-auto cursor-pointer w-[18px] visible ]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div1" class="bg-gray-700 text-white hidden absolute right-[130px] top-4 w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="bg-gray-200">
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn2">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px] "
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div2" class="bg-gray-700 text-white hidden absolute right-[130px] top-4 w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn3">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div3" class="bg-gray-700 text-white hidden absolute right-[130px] top-4 w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-gray-200">
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn4">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div4" class="bg-gray-700 text-white hidden absolute right-[130px] top-4 w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn5">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div5" class="bg-gray-700 text-white hidden absolute right-[130px] top-4 w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-gray-200">
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn6">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div6" class="bg-gray-700 text-white hidden absolute right-[130px] top-[-24px] w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">63C66-1B75f-C7170-5Db0a-3A4e</td>
+                                        <td class="p-3 pl-9">Bus</td>
+                                        <td class="p-3 pl-9">Hiren Pandav</td>
+                                        <td class="p-3 pl-9">+17.96</td>
+                                        <td class="p-3 pl-8 flex gap-1 text-blue-600 relative">
+                                            <section class="group flex gap-1">
+                                                <button id="btn7">View Details</button>
+                                                <svg class="m-auto cursor-pointer w-[18px]"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                            </section>
+                                            <div id="div7" class="bg-gray-700 text-white hidden absolute right-[130px] top-[-64px] w-[270px] p-1 my-1">
+                                                <div>ID: 63C66-1B75f-C7170-5Db0a-3A4e</div>
+                                                <div>Segment: Bus</div>
+                                                <div>Customer: Hiren Pandav</div>
+                                                <div>Commission: +17.96</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!--Recent Agents-->
+                    <div class="xl:w-[390px] md:w-[800px] w-auto">
+                        <!--Head-->
+                        <div class="w-[100%] md:w-[79%] lg:w-[100%] flex justify-between">
+                            <div class="font-bold xl:ml-[18px] w-[50%]">Recent Agents</div>
+                            <div class="w-[50%] m-auto text-right xl:mr-[20px]"> <a href="#"
+                                    class="text-blue-600 text-[14px]">View All ></a> </div>
+                        </div>
+
+                        <!--AGENTS-->
+                        <div class="bg-gray-200 my-2 sm:w-[50%] md:w-[79%] lg:mt-3 lg:m-auto lg:py-[14px] sm:my-3 
+                         xl:m-3  xl:mx-6 rounded-lg ">
+                            <div class="flex justify-around ">
+                                <img src="./Images/customer.jpg" class="w-[48px] h-[45px] rounded-[50%] ml-5">
+                                <div>
+                                    <p>Jay Chovatiya</p>
+                                    <p class="text-[12px] text-gray-400">Reg Date: 05 January 2023</p>
+                                </div>
+                                <button
+                                    class="bg-green-600 rounded-lg mt-3 h-[21px] w-[50px] text-[12px] mr-5 text-white">Active</button>
+                            </div>
+                            <div class="m-3 mx-7 h-[1px] bg-gray-400"></div>
+                            <div class="flex justify-around">
+                                <img src="./Images/customer.jpg" class="w-[48px] h-[45px] rounded-[50%] ml-5">
+                                <div>
+                                    <p>Jay Chovatiya</p>
+                                    <p class="text-[12px] text-gray-400">Reg Date: 05 January 2023</p>
+                                </div>
+                                <button
+                                    class="bg-red-600 rounded-lg mt-3 h-[21px] w-[50px] text-[12px] mr-5 text-white">Active</button>
+                            </div>
+                            <div class="m-3 mx-7 h-[1px] bg-gray-400"></div>
+                            <div class="flex justify-around">
+                                <img src="./Images/customer.jpg" class="w-[48px] h-[45px] rounded-[50%] ml-5">
+                                <div>
+                                    <p>Jay Chovatiya</p>
+                                    <p class="text-[12px] text-gray-400">Reg Date: 05 January 2023</p>
+                                </div>
+                                <button
+                                    class="bg-green-600 rounded-lg mt-3 h-[21px] w-[50px] text-[12px] mr-5 text-white">Active</button>
+                            </div>
+                            <div class="m-3 mx-7 h-[1px] bg-gray-400"></div>
+                            <div class="flex justify-around">
+                                <img src="./Images/customer.jpg" class="w-[48px] h-[45px] rounded-[50%] ml-5">
+                                <div>
+                                    <p>Jay Chovatiya</p>
+                                    <p class="text-[12px] text-gray-400">Reg Date: 05 January 2023</p>
+                                </div>
+                                <button
+                                    class="bg-green-600 rounded-lg mt-3 h-[21px] w-[50px] text-[12px] mr-5 text-white">Active</button>
+                            </div>
+                            <div class="m-3 mx-7 h-[1px] bg-gray-400"></div>
+                            <div class="flex justify-around">
+                                <img src="./Images/customer.jpg" class="w-[48px] h-[45px] rounded-[50%] ml-5">
+                                <div>
+                                    <p>Jay Chovatiya</p>
+                                    <p class="text-[12px] text-gray-400">Reg Date: 05 January 2023</p>
+                                </div>
+                                <button
+                                    class="bg-red-600 rounded-lg mt-3 h-[21px] w-[50px] text-[12px] mr-5 text-white">Inactive</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
